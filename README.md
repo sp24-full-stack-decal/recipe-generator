@@ -1,5 +1,5 @@
 ## Getting Started 
-git clone` the code on starter branch<br>
+`git clone` the code on starter branch<br>
 `cd` to the project folder and run `npm start`<br>
 
 ### Reference & Resources
