@@ -1,6 +1,6 @@
 ## Getting Started 
 `git clone` the code on starter branch<br>
-`cd` to the project folder and run `npm start`<br>
+`cd` to the project folder and run `npm start`. If this doesn't work, delete the `package-lock.json` file and run `npm install`, then run `npm start`
 
 ### Reference & Resources
 https://www.youtube.com/watch?v=s2j4IM4lGDQ<br>
