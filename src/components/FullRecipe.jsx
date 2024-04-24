@@ -4,13 +4,17 @@ import "./css/FullRecipe.css";
 function FullRecipe() {
   return (
     <div className="full-recipe">
-      <div className="upper searchbar">
+      <div className="searchbar">
         <SearchBar/>
       </div>
-      <div clasName="main body">
-        <div className="main left">
+      <div clasName="body">
+        <div className="left">
+          <div className="dish bordered">
+          </div>
         </div>
-        <div className="main right">
+        <div className="right">
+          <div className="ingredients bordered"></div>
+          <div className="steps bordered"></div>
         </div>
       </div>
 

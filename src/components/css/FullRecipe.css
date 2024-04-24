@@ -1,3 +1,4 @@
-.full-recipe {
-  color: red; 
+.bordered {
+  border: 4px solid salmon;
+  border-radius: 10px;
 }
