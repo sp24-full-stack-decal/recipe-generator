@@ -1,15 +1,15 @@
 import React from 'react'
 import "./css/FullRecipe.css";
-// import SearchBar from "./SearchBar";
+import SearchBar from "./SearchBar";
 
 
 function FullRecipe() {
   return (
     <div className="full-recipe">
-      {/* <div className="searchbar">
+      <div className="searchbar">
         <SearchBar/>
-      </div> */}
-      <div>
+      </div>
+      <div className="content">
         <div className="left">
           <div className="dish bordered">
             Tomato soup
