@@ -1,20 +1,27 @@
 import React from 'react'
 import "./css/FullRecipe.css";
+// import SearchBar from "./SearchBar";
+
 
 function FullRecipe() {
   return (
     <div className="full-recipe">
-      <div className="searchbar">
+      {/* <div className="searchbar">
         <SearchBar/>
-      </div>
-      <div clasName="body">
+      </div> */}
+      <div>
         <div className="left">
           <div className="dish bordered">
+            Tomato soup
           </div>
         </div>
         <div className="right">
-          <div className="ingredients bordered"></div>
-          <div className="steps bordered"></div>
+          <div className="ingredients bordered">
+            ingredients
+          </div>
+          <div className="steps bordered">
+            steps
+          </div>
         </div>
       </div>
 
@@ -22,4 +29,4 @@ function FullRecipe() {
   )
 }
 
-export default FullRecipe
+export default FullRecipe;

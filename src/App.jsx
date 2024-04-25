@@ -6,7 +6,7 @@ import FullRecipe from "./components/FullRecipe";
 function App() {
   return (
       <div>
-        {/* <SearchBar /> */}
+        <SearchBar />
         <FullRecipe />
       </div>
   );
