@@ -12,15 +12,22 @@ function FullRecipe() {
       <div className="content">
         <div className="left">
           <div className="dish bordered">
-            Tomato soup
+            <p className="title">Tomato Soup</p>
           </div>
         </div>
         <div className="right">
           <div className="ingredients bordered">
-            ingredients
+            <p className="title">Ingredients</p>
+            <p className="text">
+              <ul>
+                <li>1 teaspoon of salt</li>
+                <li>3 tomatoes</li>
+                <li>3 potatoes</li>
+              </ul>
+            </p>
           </div>
           <div className="steps bordered">
-            steps
+            <p className="title">Steps</p>
           </div>
         </div>
       </div>
