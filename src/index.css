@@ -41,6 +41,7 @@
   font-style: italic;
   
   background: linear-gradient(to right, #41A0F0, #255C8A);
+  background-clip: border-box; /* idk why we need this */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
