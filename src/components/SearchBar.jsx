@@ -7,6 +7,7 @@ const RecipeSearch = () => {
   const [recipes, setRecipes] = useState([]);
 
   const searchRecipes = async () => {
+    /* API CALL */
     try {
       const response = await axios.get(
         `https://api.edamam.com/search?q=${query}&app_id=${
@@ -20,6 +21,7 @@ const RecipeSearch = () => {
     }
   };
 
+  /* I'ma be honest i have no idea what this does!!! LMAO! */
   const handleSearch = (e) => {
     e.preventDefault();
     searchRecipes();
@@ -27,6 +29,7 @@ const RecipeSearch = () => {
 
   return (
     <>
+      {/* The Search Bar + Triggers handleSearch when submitted  */}
       <form id="search-box" onSubmit={handleSearch}>
         <input
           id="search-bar"
@@ -46,6 +49,7 @@ const RecipeSearch = () => {
       </div>
 
       <div>
+        {/* printing out results */}
         {recipes.map((recipe) => (
           <div key={recipe.recipe.uri}>
             <h2>{recipe.recipe.label}</h2>
