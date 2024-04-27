@@ -12,7 +12,6 @@ function App() {
             Generate your<span id="personalized"> personalized </span>recipe
           </h1>
           <SearchBar />
-          {/* <RecipeSearch /> */}
         </div>
       </div>
     </>
