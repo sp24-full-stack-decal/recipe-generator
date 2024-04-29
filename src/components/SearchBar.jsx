@@ -46,10 +46,10 @@ const RecipeSearch = () => {
         <input id="generate" type="submit" value="Generate" />
       </form>
       <div id="ingredient-filter">
-        <input type="checkbox" id="ingredient-check" value="ingredient-check" />
+        {/* <input type="checkbox" id="ingredient-check" value="ingredient-check" />
         <label htmlFor="ingredient-check">
           Include ingredients that I don't have
-        </label>
+        </label> */}
       </div>
 
       <div>

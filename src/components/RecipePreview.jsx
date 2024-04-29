@@ -11,21 +11,17 @@ const RecipePreview = (props) => {
   return (
     <>
       <div className="card">
-        {/*       <input
-          type="text"
-          className="name"
-          value={recipeName}
-          onChange={handleNameChange}
-        /> */}
         <div className="name">
           <b>{props.name}</b>
         </div>
         <div className="text">
           <em>
-            <a href={props.link}>Recipe Link!</a> <br></br>
+            <a href={props.link} target="_blank">Recipe Link!</a> <br></br>
           </em>
           <img src={props.image} alt={props.name} />
-          Ingredients: {props.ingredients}
+          <div className="ingredient-container">
+            <p>Ingredients: {props.ingredients}</p>
+          </div>
         </div>
       </div>
     </>

@@ -2,12 +2,13 @@ import React from "react";
 import { getRecipesData } from "../helper/recipesData";
 import Preview from "../components/Preview";
 import RecipePreview from "../components/RecipePreview";
+import '../components/css/RecipePreview.css'
 
 function ResultsPage() {
   const recipes = getRecipesData();
 
   return (
-    <div>
+    <div className="cardsList">
       {/* Printing out results */}
       {recipes.map((recipe) => (
         <div key={recipe.recipe.url}>
