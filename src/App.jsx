@@ -6,8 +6,13 @@ import RecipePreview from "./components/RecipePreview";
 function App() {
   return (
     <>
-      <div>
-        <RecipePreview />
+      <div className="app">
+        <div id="landing-box">
+          <h1>
+            Generate your<span id="personalized"> personalized </span>recipe
+          </h1>
+          <SearchBar />
+        </div>
       </div>
     </>
   );
