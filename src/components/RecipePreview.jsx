@@ -21,7 +21,10 @@ const RecipePreview = (props) => {
           <b>{props.name}</b>
         </div>
         <div className="text">
-          Link: {props.link} <br></br>
+          <em>
+            <a href={props.link}>Recipe Link!</a> <br></br>
+          </em>
+          <img src={props.image} alt={props.name} />
           Ingredients: {props.ingredients}
         </div>
       </div>

@@ -50,3 +50,7 @@
   border-bottom-right-radius: 10px; /* Ensure the overlay matches the border-radius */
   z-index: 0; /* Ensure the overlay is behind the card content */
 }
+
+a {
+  color: #3e9cf3;
+}

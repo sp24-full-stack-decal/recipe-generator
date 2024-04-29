@@ -14,11 +14,11 @@ function ResultsPage() {
           <RecipePreview
             name={recipe.recipe.label}
             link={recipe.recipe.url}
+            image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients.map(
               (item) => item.text + " "
             )}
           />
-          {console.log(recipe.recipe.ingredients.map((item) => item.text))}
           <br></br>
         </div>
       ))}
