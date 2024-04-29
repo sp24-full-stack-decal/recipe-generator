@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./css/SearchBox.css";
+import RecipePreview from "./RecipePreview";
 
 const RecipeSearch = () => {
   const [query, setQuery] = useState("");
@@ -52,7 +53,17 @@ const RecipeSearch = () => {
         {/* printing out results */}
         {recipes.map((recipe) => (
           <div key={recipe.recipe.uri}>
-            <h2>{recipe.recipe.label}</h2>
+            {/* text, quantity, measure, food, weight, foodCategory, foodId, image */}
+            {/* {console.log(recipe.recipe.ingredients[1])} */}
+            {/* {console.log(recipeIngredients)} */}
+            <br></br>
+            {recipe.recipe.uri
+            const ingredients = recipe.recipe.ingredients}
+
+            <RecipePreview
+              name={recipe.recipe.label}
+              ingredients={recipe.recipe.ingredients.text}
+            />
           </div>
         ))}
       </div>
