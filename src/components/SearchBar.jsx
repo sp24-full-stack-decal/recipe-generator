@@ -4,6 +4,7 @@ import { setRecipesData } from "../helper/recipesData";
 import "./css/SearchBox.css";
 import Preview from "../components/Preview";
 import ResultsPage from "../pages/ResultsPage";
+import RecipePreview from "./RecipePreview";
 
 const RecipeSearch = () => {
   const [query, setQuery] = useState("");
@@ -52,12 +53,10 @@ const RecipeSearch = () => {
       </div>
 
       <div>
-        {/* printing out results
+        {/* printing out results*/}
         {recipes.map((recipe) => (
-          <div key={recipe.recipe.url}>
-            <Preview name={recipe.recipe.label} text={recipe.recipe.url}/>
-          </div>
-        ))} */}
+          <div key={recipe.recipe.uri}></div>
+        ))}
         <ResultsPage />
       </div>
     </>
