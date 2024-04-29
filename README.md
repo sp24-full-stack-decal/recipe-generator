@@ -1,15 +1,8 @@
-## Getting Started 
-`git clone` the code on starter branch<br>
-`cd` to the project folder and run `npm start`. If this doesn't work, delete the `package-lock.json` file and run `npm install`, then run `npm start`
+# React + Vite
 
-### Reference & Resources
-https://www.youtube.com/watch?v=s2j4IM4lGDQ<br>
-https://github.com/prabinmagar/mealdb-food-recipe-app-with-axios
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-## Some required packages:
-`npm install sass`<br>
-`npm install react-icons --save`<br>
-`npm install react-router-dom@6.0.2`<br>
-`npm install axios`<br>
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

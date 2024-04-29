@@ -1,0 +1,47 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#landing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4vh;
+
+  /* border: solid black 1px; */
+}
+
+.app h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+#personalized {  
+  font-weight: 700;
+  font-style: italic;
+  
+  background: linear-gradient(to right, #41A0F0, #255C8A);
+  background-clip: border-box; /* idk why we need this */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
