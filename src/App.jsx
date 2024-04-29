@@ -1,20 +1,14 @@
 import React from "react";
 import "./index.css";
+import SearchPage from "./pages/SearchPage";
 import SearchBar from "./components/SearchBar";
 import RecipePreview from "./components/RecipePreview";
 
 function App() {
   return (
-    <>
       <div className="app">
-        <div id="landing-box">
-          <h1>
-            Generate your<span id="personalized"> personalized </span>recipe
-          </h1>
-          <SearchBar />
-        </div>
+        <SearchPage />
       </div>
-    </>
   );
 }
 
