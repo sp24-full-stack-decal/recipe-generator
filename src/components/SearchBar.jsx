@@ -53,20 +53,10 @@ const RecipeSearch = () => {
       </div>
 
       <div>
-        {/* printing out results
+        {/* printing out results*/}
         {recipes.map((recipe) => (
-          <div key={recipe.recipe.uri}>
-            {/* text, quantity, measure, food, weight, foodCategory, foodId, image */}
-            {/* {console.log(recipe.recipe.ingredients[1])} */}
-            {/* {console.log(recipeIngredients)} */}
-            <br></br>
-
-            <RecipePreview
-              name={recipe.recipe.label}
-              ingredients={recipe.recipe.ingredients.text}
-            />
-          </div>
-        ))} */}
+          <div key={recipe.recipe.uri}></div>
+        ))}
         <ResultsPage />
       </div>
     </>

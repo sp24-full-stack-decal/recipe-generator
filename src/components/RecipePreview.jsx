@@ -17,8 +17,13 @@ const RecipePreview = (props) => {
           value={recipeName}
           onChange={handleNameChange}
         /> */}
-        <div className="name">{props.name}</div>
-        <div className="text">Ingredients: {props.ingredients}</div>
+        <div className="name">
+          <b>{props.name}</b>
+        </div>
+        <div className="text">
+          Link: {props.link} <br></br>
+          Ingredients: {props.ingredients}
+        </div>
       </div>
     </>
   );
