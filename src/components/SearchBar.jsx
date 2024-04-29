@@ -57,8 +57,6 @@ const RecipeSearch = () => {
             {/* {console.log(recipe.recipe.ingredients[1])} */}
             {/* {console.log(recipeIngredients)} */}
             <br></br>
-            {recipe.recipe.uri
-            const ingredients = recipe.recipe.ingredients}
 
             <RecipePreview
               name={recipe.recipe.label}
