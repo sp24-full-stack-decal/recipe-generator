@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { setRecipesData } from "../helper/recipesData";
 import "./css/SearchBox.css";
+import Preview from "../components/Preview";
+import ResultsPage from "../pages/ResultsPage";
 import RecipePreview from "./RecipePreview";
 
 const RecipeSearch = () => {
@@ -16,13 +19,13 @@ const RecipeSearch = () => {
         }&app_key=${import.meta.env.VITE_APP_KEY}`
       );
       setRecipes(response.data.hits);
+      setRecipesData(response.data.hits);
       console.log(response);
     } catch (error) {
       console.error("Error fetching recipes: ", error);
     }
   };
 
-  /* I'ma be honest i have no idea what this does!!! LMAO! */
   const handleSearch = (e) => {
     e.preventDefault();
     searchRecipes();
@@ -50,7 +53,7 @@ const RecipeSearch = () => {
       </div>
 
       <div>
-        {/* printing out results */}
+        {/* printing out results
         {recipes.map((recipe) => (
           <div key={recipe.recipe.uri}>
             {/* text, quantity, measure, food, weight, foodCategory, foodId, image */}
@@ -63,7 +66,8 @@ const RecipeSearch = () => {
               ingredients={recipe.recipe.ingredients.text}
             />
           </div>
-        ))}
+        ))} */}
+        <ResultsPage />
       </div>
     </>
   );
