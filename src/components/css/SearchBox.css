@@ -62,3 +62,7 @@
   min-width: 1.3rem;
   border-radius: 100rem;
 }
+
+#search-box {
+  margin-bottom: 2%;
+}
