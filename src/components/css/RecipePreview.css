@@ -28,6 +28,7 @@
   padding: 10px;
   background-color: rgba(242, 151, 150);
   color: #f3f3f3;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .text {
@@ -72,6 +73,8 @@ a {
 img {
   height: 250px;
   width: 250px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .ingredient-container {
