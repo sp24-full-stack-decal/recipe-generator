@@ -16,9 +16,9 @@ const RecipePreview = (props) => {
         </div>
         <div className="text">
           <em>
-            <a href={props.link} target="_blank">Recipe Link!</a> <br></br>
+            <a href={props.link} target="_blank"><img src={props.image} alt={props.name} href={props.link} target="_blank" /></a> <br></br>
           </em>
-          <img src={props.image} alt={props.name} />
+          {/* <img src={props.image} alt={props.name} href={props.link} target="_blank" /> */}
           <div className="ingredient-container">
             <p>Ingredients: {props.ingredients}</p>
           </div>
